@@ -103,7 +103,7 @@
     .login {
         padding: 6rem 3.2rem 8rem 3.2rem;
         border-radius: 2rem;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #fff;
     }
 }
 
