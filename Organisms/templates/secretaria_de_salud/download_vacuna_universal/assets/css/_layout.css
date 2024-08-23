@@ -1,0 +1,147 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    padding: 0 2rem;
+    border-bottom: 2px solid #782A3D;
+}
+
+.header h1 {
+    font-size: clamp(2.4rem, 2vw, 2.8rem);
+}
+
+.header button {
+    display: grid;
+    place-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: #782A3D;
+    transition: all 0.5s ease-in-out;
+}
+
+.header button svg {
+    width: 1.6rem;
+    fill: #fff;
+}
+
+.header button:hover {
+    background-color: #171717;
+}
+
+
+/* --------------------------------------------------- */
+.main {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: calc(100vh - 6rem);
+}
+
+
+
+.download-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32rem;
+    height: 44rem;
+    border-radius: 1.2rem;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #fff;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.download-card .bg {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30.8rem;
+    height: 42.8rem;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(2.4rem);
+    -webkit-backdrop-filter: blur(2.4rem);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    outline: 2px solid #fff;
+    z-index: 2;
+}
+
+.download-card .bg figure,
+.download-card .bg figure img {
+    width: 20rem;
+}
+
+.download-card .bg button {
+    width: 80%;
+    height: 4rem;
+    padding: 0.8rem;
+    border: 0.2rem solid #782A3D;
+    border-radius: 0.4rem;
+    background-color: #782A3D;
+    color: #f6f6f6;
+    font-size: clamp(1.4rem, 1vw, 1.6rem);
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+.download-card .bg button:hover {
+    background-color: #171717;
+}
+
+.download-card .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width:  28rem;
+    height: 28rem;
+    border-radius: 50%;
+    background-color: #782A3D;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+
+@media (min-width: 769px) {
+    /* Estilos para tablets */
+    
+}
+
+
+
+@media (min-width: 1025px) {
+    /* Estilos para laptops y desktops */
+    
+}
+
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
