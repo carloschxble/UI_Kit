@@ -1,0 +1,19 @@
+:root {
+    /* Tipografías - Fonts */
+    --primary-font: "Rubik";
+    --secondary-font: "Nunito";
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf");
+    font-weight: 300 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}

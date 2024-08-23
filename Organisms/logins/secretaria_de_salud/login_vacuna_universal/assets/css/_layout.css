@@ -1,0 +1,151 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 52rem;
+    height: auto;
+}
+
+/* --------------------------------------------------- */
+.login__brand-identity {
+    display: grid;
+    place-content: center;
+    padding: 2.4rem;
+}
+
+
+
+.login__brand-identity figure,
+.login__brand-identity figure, img {
+    height: 8rem;
+}
+
+/* --------------------------------------------------- */
+.login__interaction {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+
+
+.login__interaction .interaction__texts {
+    width: 100%;
+    padding-top: 2rem;
+    border-top: 1px solid #782A3D;
+    text-align: center;
+}
+
+.login__interaction .interaction__texts h1 {
+    margin-bottom: 0.8rem;
+    font-size: clamp(3.2rem, 5vw, 4.4rem);
+    font-weight: 700;
+}
+
+.login__interaction .interaction__texts p {
+    color: #4d4d4d;
+    font-size: clamp(1.4rem, 1vw, 1.6rem);
+}
+
+
+
+.login__interaction .interaction__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login__interaction .interaction__form .form__input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.login__interaction .interaction__form .form__input label {
+    color: #171717;
+    font-size: clamp(1.2rem, 1vw, 1.4rem);
+    font-weight: 600;
+}
+
+.login__interaction .interaction__form .form__input input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.2rem solid #782A3D; 
+    border-radius: 0.4rem;
+    background-color: #f6f6f6;
+    font-size: clamp(1.4rem, 1vw, 1.6rem);
+}
+
+.login__interaction .interaction__form .form__button button {
+    width: 100%;
+    height: 4rem;
+    padding: 0.8rem;
+    border: 0.2rem solid #782A3D;
+    border-radius: 0.4rem;
+    margin-top: 4rem;
+    background-color: #782A3D;
+    color: #f6f6f6;
+    font-size: clamp(1.4rem, 1vw, 1.6rem);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.login__interaction .interaction__form .form__button button:hover {
+    background-color: #171717;
+}
+
+
+
+@media (min-width: 769px) {
+    /* Estilos para tablets */
+    .login {
+        padding: 6rem 3.2rem 8rem 3.2rem;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    /* Estilos para laptops y desktops */
+    .login {
+        flex-direction: row-reverse;
+        max-width: 100rem;
+        height: 68rem;
+        padding: 0;
+    }
+
+    /* --------------------------------------------------- */
+    .login__brand-identity {
+        width: 50%;
+        height: 100%;
+        padding: 4rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background-color: #f8edf0;
+    }
+
+    .login__brand-identity figure,
+    .login__brand-identity figure, img {
+        height: 12rem;
+    }
+
+    /* --------------------------------------------------- */
+    .login__interaction {
+        justify-content: space-evenly;
+        width: 50%;
+        padding: 6rem;
+    }
+
+    .login__interaction .interaction__texts {
+        padding-top: 0;
+        border-top: none;
+    }
+
+    .login__interaction .interaction__form .form__button button {
+        margin-top: 8rem;
+    }
+}
