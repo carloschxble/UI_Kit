@@ -1,0 +1,42 @@
+/* ========== TYPOGRAPHY ========== */
+/* --- Google Fonts --- */
+/* --- Fonts --- */
+/* -- Variables Fonts --- */
+
+/* ========== VARIABLES ========== */
+
+/* ========== BASE ========== */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--primary-font);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button, input, textarea {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    outline: none;
+}
+
+li, ol, ul {
+    list-style: none;
+}
+
+/* ========== STYLES ========== */
