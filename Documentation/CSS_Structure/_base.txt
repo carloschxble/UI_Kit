@@ -1,0 +1,68 @@
+/* ================ GLOBAL VARIABLES ================ */
+
+:root {
+    /* ++++++++++++ COLORS ++++++++++++ */
+    /* ---- Institute Colors ---- */
+    --example: #abcdef;
+    --example-two: #123456;
+    --example-n: #a1b2c3;
+
+    /* ---- Shades of black ---- */
+    --charcoal: #333;
+    --ink-black: #2b2b2b;
+    --onyx-black: #1a1a1a;
+    --slate-black: #474747;
+
+    /* ---- Shades of white ---- */
+    --off-white: #dcdcdc;
+    --snow-white: #fafafa;
+    --cream-white: #f5f5dc;
+    --pearl-white: #f0f0f0;
+
+    /* ---- Common Colors ---- */
+    --white: #fff;
+    --gray: #808080;
+    --black: #000;
+    --red: #ff0000;
+    --pink: #ffc0cb;
+    --orange: #ffa500;
+    --yellow: #ffff00;
+    --purple: #800080;
+    --green: #008000;
+    --blue: #0000ff;
+    --brown: #800000;
+}
+
+/* ================ GLOBAL RESET ================ */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--primary-font);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button, input, textarea {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    outline: none;
+}
+
+li, ol, ul {
+    list-style: none;
+}
