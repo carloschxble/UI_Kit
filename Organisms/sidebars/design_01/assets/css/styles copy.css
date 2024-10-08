@@ -128,14 +128,13 @@ img {
 .nav {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     height: 100vh;
-    padding: 1.2rem 1.5rem 0;
+    padding: 1rem 1rem 0;
     background-color: var(--container-color);
     box-shadow: 1px 0 0 rgba(22, 8, 43, 0.1);
     z-index: var(--z-fixed);
     transition: .4s;
-    width: 68px; /* Reduced navbar */
 }
 
 .nav__container {
@@ -161,6 +160,14 @@ img {
 .nav__list, 
 .nav__items {
     display: grid;
+}
+
+.nav__list {
+    row-gap: 2.5rem;
+}
+
+.nav__items {
+    row-gap: 1.5rem;
 }
 
 .nav__subtitle {
@@ -257,7 +264,7 @@ img {
     }
 }
 
-@media (width >= 1025px) {
+@media screen and (min-width: 768px) {
     body {
         padding: 1rem 3rem 0 6rem;
     }
@@ -282,16 +289,14 @@ img {
         height: 40px;
         order: 1;
     }
-    
     .nav {
         left: 0;
         padding: 1.2rem 1.5rem 0;
         width: 68px; /* Reduced navbar */
     }
     .nav__items {
-        gap: 2rem;
+        row-gap: 1.7rem;
     }
-
     .nav__icon {
         font-size: 1.3rem;
     }
@@ -301,7 +306,7 @@ img {
     .nav__name, 
     .nav__subtitle, 
     .nav__dropdown-icon {
-        opacity: 1;
+        opacity: 0;
         transition: .3s;
     }
     
